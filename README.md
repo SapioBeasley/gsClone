@@ -7,3 +7,5 @@ node server
 ```
 
 Navigate to http://0.0.0.0:3000 (http://localhost:3000)
+
+![alt text](Google%20clone.png)
