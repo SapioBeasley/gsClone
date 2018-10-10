@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Google clone</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="app">
+
+<nav class="navbar navbar-expand-lg navbar-transparent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+
+        <div class="form-inline my-2 my-lg-0">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#"><i class="zmdi zmdi-apps"></i></a></li>
+            <li><a href="#"><i class="zmdi zmdi-notifications"></i></a></li>
+        </div>
+    </div>
+</nav>
+
+<div class="vertical-center" ng-controller="FrameController as vm">
+    <div class="container container-center">
+        <div class="row">
+            <div class="text-center col-md-12">
+
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                     alt="Google Logo" id="google-logo">
+
+                <div class="form-adjustment">
+                    <form action="#" class="form-inline" ng-submit="vm.submitSearch()">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-lg" id="gg-search" ng-model="vm.searchInput">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="button-adjustment">
+                    <div class="col-md-12 col-md-offset-3">
+                        <button class="btn btn-md" ng-click="vm.submitSearch()">Google Search</button>
+                        <button class="btn btn-md" ng-click="vm.feelingLucky()">I'm Feeling Lucky</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-transparent" style="color: #666;font-size: small">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li><a href="#">Advestising</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+
+                <div class="form-inline my-2 my-lg-0">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+</footer>
+
+
+
+
+
+<!--</div>-->
+<!--</div>-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+
+</body>
+</html>
